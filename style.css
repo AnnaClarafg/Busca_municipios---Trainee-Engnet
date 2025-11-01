@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selecionar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;    
+    text-align: center;
+}
+
+label {
+    color: rgb(7, 48, 1);
+    font-size: 1.5em;
+}
+
+select {
+    padding: 10px 40px;
+    font-size: 1em;
+}
+
+#tabela {
+    margin-top: 50px;
+    text-align: center;
+    border-collapse: collapse;
+    border-color: rgb(7, 48, 1);
+}
+
+#tabela td {
+    padding: 10px 40px;
+}
+
+th {
+    background-color: rgb(103, 179, 93); 
+    font-size: 1.5em;
+    color: rgb(7, 48, 1); 
+    padding: 10px 40px;
+}
+
+
+tr:nth-child(even) {
+   background-color: rgb(178, 248, 168); 
+}
+
+#paginacao {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pagina-btn {
+    background-color: rgb(178, 248, 168);
+    border: 1px solid rgb(7, 48, 1);
+    color: rgb(7, 48, 1);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pagina-btn:hover:not(:disabled) {
+    background-color: rgb(103, 179, 93);
+    color: white;
+}
+
+.pagina-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagina-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(7, 48, 1);
+}
